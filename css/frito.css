@@ -1,0 +1,544 @@
+/* Resetear márgenes y rellenos a cero para todos los elementos */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Estilos generales del cuerpo del documento*/
+body {
+
+    font-family: Arial, sans-serif;
+    background-image: url(../img/body.jpg);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*<-----Encabezado de la pagina-----> */
+/*fondo del encabezado*/
+header {
+    background-color: rgb(248, 250, 108);
+    padding: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centra verticalmente el contenido */
+    text-align: center;
+    opacity: 0.8;
+}
+
+
+/* Estilos del logo en el encabezado */
+.logo img {
+    width: 150px; /* Ancho del logo */
+    height: auto; /* Altura ajustada automáticamente */
+}
+
+/* Estilos de los botones del menú de navegación */
+.boton {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s;
+  }
+
+  .boton:hover {
+    background-color: #f0597f;
+    color: #fff;
+  }
+
+  .active {
+    background-color: #f0597f;
+    color: #fff;
+}
+
+/*Fin del encabezado*/
+
+/*CUERPO*/
+
+/*FRASE ----   MISION   ------  VISION - ------*/
+#fra-mis-vis {
+  background: #fff;
+  width: 80%;
+  margin: 60px auto;
+  max-width: 940px;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 20px; /* Espaciado interno del cuadro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el cuadro */
+}
+
+/* Estilos de los artículos dentro de la sección "FRASE - MISIÓN - VISIÓN" */
+article {
+margin: 20px; /* Ajuste del margen */
+}
+
+/* Columna izquierda con el 30% del ancho total */
+.Col30 {
+  width: 50%; /* Ajusta el ancho de la columna izquierda según tus necesidades */
+}
+
+/* Columna derecha con el 50% del ancho total */
+.Col50 {
+  width: 50%; /* Ajusta el ancho de la columna derecha según tus necesidades */
+}
+
+
+/* Estilos de los bloques de texto "FRASE", "MISIÓN", "VISIÓN" */
+#fra, #mis, #vis {
+  background: rgb(243, 226, 160);
+  color: black; /* Color del texto en el cuadro */
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #333; /* Agregué un borde para crear un cuadro alrededor del contenido */
+  text-align: center; /* Centra el texto dentro del cuadro */
+}
+
+
+/* Margen inferior para los bloques de texto "FRASE", "MISIÓN", "VISIÓN" */
+#fra, #mis, #vis {
+  margin-bottom: 20px; /* Espacio entre el primer título y el párrafo siguiente */
+}
+
+/* Imagen en la columna derecha con ancho máximo del 100% y borde redondeado */
+.Img50 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Estilos para la sección "Video de nuestra comida" */
+#videoProm>div>video{
+    width: 100%;
+    height: 400px;
+    
+}
+
+/* Contenedor de la sección "Video de nuestra comida" con márgenes, fondo y sombra */
+#videoProm {
+    margin: 30px auto;
+    background-color: #fff;
+    max-width: 940px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado del video con fondo oscuro, texto blanco y márgenes */
+#videoProm h2{
+  text-align: center;
+    background: #333;
+    color: white;
+    margin: 40px 50px;
+}
+
+/* Sección "Platos Principales" con márgenes, fondo y sombra */
+#platillos {
+    max-width: 940px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Encabezado de "Platos Principales" con fondo oscuro, texto blanco y márgenes */
+  #platillos h2{
+    text-align: center;
+    background: #333;
+    color: white;
+    margin: 40px 50px;
+  }
+
+  /* Estilos para los elementos dentro de la sección "Platos Principales" */
+  #platillos h3{
+    text-align: center;
+    background: #333;
+    color: #fff;
+  }
+
+  #platillos h4{
+    text-align: center;
+    background: #817f7f;
+    color: #fff;
+  }
+
+  /* Estilo para la sección "Platillos" */
+  #platillos ul {
+    list-style: none;
+    padding: 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilo para cada elemento de la lista de platos principales */
+#platillos li {
+    width: 40%;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    transition: transform 0.5s ease; /* Agregamos la transición */
+}
+
+/* Efecto de desplazamiento hacia arriba en el hover de cada plato principal */
+#platillos li:hover {
+    transform: translateY(-10px); /* Desplazamiento hacia arriba en el hover */
+}
+
+/* Estilos para las imágenes dentro de la lista de platos principales */
+img {
+    max-width: 100%;/* La imagen no debe exceder el ancho del contenedor */
+    height: 300px; /* Altura fija de 300px para mantener la proporción */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin-bottom: 10px; /* Agrega un espacio de 10px en la parte inferior de cada imagen */
+}
+
+/* Estilo para los títulos de los platos principales */
+h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+/* Estilos para la sección "Momentos" con márgenes, fondo y sombra */
+  #momentos{
+    max-width: 940px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Encabezado de "Momentos" con fondo oscuro, texto blanco y márgenes */
+  #momentos h2{
+    text-align: center;
+    background: #333;
+    color: white;
+    margin: 40px 50px;
+  }
+
+  /* Estilos para las imágenes dentro de la sección "Momentos" con transición de escala en hover */
+  #momentos img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  /* Efecto de escala en hover para las imágenes de "Momentos" */
+  #momentos img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Lista de imágenes de "Momentos" con estilo de flexbox */
+  #momentos ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  /* Elementos de la lista de imágenes de "Momentos" con márgenes y ajustes de caja */
+  #momentos li {
+    width: calc(33.33% - 20px); /* Ajusta el ancho y el margen según tus preferencias */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  /* Contenedor con márgenes, fondo y sombra para la sección "Contenedor" */
+  #contenedor {
+    max-width: 940px;
+    margin: 20px auto;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Párrafo dentro del contenedor con anchura, relleno, negrita y alineación de texto */
+  #contenedor p{
+    width: 90%;
+    padding: 10px 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  /* Encabezado del contenedor con fondo oscuro, texto blanco y márgenes */
+  #contenedor h2{
+    text-align: center;
+    background: #333;
+    color: white;
+    margin: 20px 30px;
+  }
+
+  /* Columna dentro del contenedor con flexibilidad y relleno */
+  .columna {
+    flex: 1;
+    padding: 20px;
+  }
+
+  /* Sección "Ofertas" con márgenes, fondo y sombra */
+#ofertas{
+  max-width: 940px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado de "Ofertas" con fondo oscuro, texto blanco y márgenes */
+#ofertas h2{
+  text-align: center;
+  background: #333;
+  color: white;
+  margin: 40px 50px;
+}
+
+/* Imágenes dentro de la sección "Ofertas" con transición de escala en hover */
+#ofertas img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+/* Lista de imágenes de "Ofertas" con estilo de flexbox */
+#ofertas ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Elementos de la lista de imágenes de "Ofertas" con márgenes y ajustes de caja */
+#ofertas li {
+  width: calc(33.33% - 20px); /* Ajusta el ancho y el margen según tus preferencias */
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+/* Efecto de escala en hover para las imágenes de "Ofertas" */
+#ofertas img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para el formulario con márgenes, fondo, borde redondeado y sombra */
+form {
+  background-color: #fff;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado del formulario con fondo oscuro, texto blanco y márgenes */
+h2 {
+  background: #333;
+    text-align: center;
+    color: #fff;
+    margin: 20px;
+}
+
+/* Estilos para las etiquetas del formulario con margen inferior */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilos para los campos de entrada del formulario con ancho del 100%, relleno y margen inferior */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el botón del formulario con color de fondo, texto blanco y borde redondeado */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Efecto de cambio de color de fondo en hover para el botón del formulario */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para el pie de página con flexibilidad, fondo, color de texto y centrado de contenido */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(179, 83, 15);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+  /* Estilos para el logo en el pie de página con anchura máxima y altura automática */
+  .logo-pie img {
+    width: 150px;
+    height: auto;
+  }
+
+  /* Estilos para los enlaces de redes sociales en el pie de página con márgenes, relleno, borde redondeado y transición de color de fondo en hover */
+  #redes-sociales a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.5s;
+  }
+
+  /* Estilos específicos para el enlace de Facebook en el pie de página con color de fondo */
+  .facebook {
+    background-color: #3b5998;
+  }
+  /* Estilos específicos para el enlace de Facebook en el pie de página con color de fondo */
+  .instagram {
+    background-color: #e4405f;
+  }
+  /* Efecto de cambio de color de fondo en hover para los enlaces de redes sociales en el pie de página */
+  #redes-sociales a:hover {
+    background-color: rgb(0, 0, 0);
+  }
+
+  /* Estilos específicos para pantallas más pequeñas utilizando media queries */
+  @media only screen and (max-width: 800px) {
+    body {
+        font-size: 14px; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+    }
+
+    header {
+        padding: 5px; /* Reducción adicional del espacio en el encabezado para pantallas pequeñas */
+    }
+      /*inicio del primer cuadro*/
+      #fra-mis-vis {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .Col30, .Col50 {
+        width: 100%;
+        max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+    }
+    
+    .Col50 {
+        margin-top: 20px; /* Ajusta el espacio entre la columna de texto y la imagen */
+    }
+    
+    #fra-mis-vis img {
+        width: 100%;
+        height: auto;
+    }    
+  /*fin del primer cuadro*/
+
+  /*inicio del segundo cuadro*/
+    #videoProm {
+      max-width: 800px; /* Ajusta el ancho máximo del contenedor del video según sea necesario */
+      margin: 0 auto; /* Centra el contenedor en la página */
+  }
+
+    #videoProm video {
+      width: 100%; /* El video ocupa el 100% del ancho del contenedor */
+      height: auto; /* La altura se ajusta automáticamente según el ancho */
+      max-width: 100%; /* El video no excederá el 100% del ancho del contenedor */
+      display: block; /* Elimina espacios en blanco debajo del video */
+  }
+  /*fin del segundo cuadro*/
+
+  /*inicio del tercer cuadro*/
+  #contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.columna {
+    width: 50%;
+    max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+    margin: 0 auto; /* Centra el contenido en el medio */
+    margin-top: 20px; /* Ajusta el espacio entre las columnas */
+    padding: 0 20px; /* Agrega algún relleno lateral para mejorar la legibilidad */
+}
+
+.columna img {
+    width: 100%;
+    height: auto;
+}
+/*fin del tercer cuaddro*/
+
+/*comienso del footer*/
+footer {
+  background-color: rgb(179, 83, 15);
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columna1,
+.columna2 {
+  flex: 1;
+  text-align: center;
+}
+
+.logo-pie img {
+  max-width: 100%;
+  height: auto;
+}
+
+#redes-sociales {
+  margin-top: 10px; /* Ajusta el espacio entre la imagen y las redes sociales */
+}
+
+.info-contacto,
+.google-maps {
+  margin-top: 20px; /* Ajusta el espacio entre la información de contacto y el mapa de Google */
+}
+
+
+
+    nav{
+      display: flex;
+    justify-content: space-around; /* Distribuirá los contenedores de manera uniforme en el espacio disponible */
+    }
+
+    nav ul {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .menu{
+      display: flex;
+      flex-direction: column; /* Colocará los botones en columnas en lugar de filas */
+      align-items: center; /* Centrará los botones verticalmente en cada columna */
+    }
+
+    .menu a {
+        padding: 8px 12px; /* Ajuste adicional del espaciado de los botones en el menú */
+        margin: 5px 0; /* Ajusta el espacio entre los botones en una columna */
+    }
+
+    /* Otros ajustes específicos para pantallas más pequeñas según sea necesario */
+}
